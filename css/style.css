@@ -1,8 +1,116 @@
-@import url(./css/fonts.css);
+@import url("https://fonts.googleapis.com/css?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Livvic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 *, *::before, *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+/* font-family: 'Abel', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Livvic', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Josefin Sans', sans-serif; */
+/* Global Classes */
+html, body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: 0.5vw;
+}
+
+.text-gray, .nav-menu .social-icons a i, .nav-menu .nav-items .nav-link a {
+  color: gray;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-family: "Abel", sans-serif;
+}
+
+.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-family: "Livvic", sans-serif;
+  cursor: pointer;
+}
+
+.collapse {
+  height: 30rem;
+}
+
+/* nav */
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  height: 8vh;
+}
+.nav-menu .toggle-collapse {
+  display: none;
+}
+.nav-menu .nav-items {
+  display: flex;
+}
+.nav-menu .nav-items .nav-link a {
+  padding: 1rem;
+  text-transform: capitalize;
+}
+.nav-menu .social-icons a i {
+  padding: 0.1rem 0.3rem;
+}
+
+/* Main Site-title */
+main .site-title {
+  background: url("../img/Background-image.png") no-repeat center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+main .site-title .site-background {
+  padding-top: 13rem;
+}
+main .site-title .btn {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  margin: 1.8rem;
+}
+
+/* Media Query */
+@media (max-width: 576px) {
+  .nav-menu .toggle-collapse {
+    display: initial;
+  }
+  .nav-menu .toggle-collapse .toggle-icons {
+    margin-right: 1rem;
+  }
+  .nav-menu .nav-items {
+    flex-direction: column;
+  }
+  .nav-menu .social-icons {
+    margin-top: 10rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
