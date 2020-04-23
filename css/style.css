@@ -61,8 +61,11 @@ h3 {
 .nav-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 0;
   height: 8vh;
+  transition: 1s;
+  overflow-y: hidden;
 }
 .nav-menu .toggle-collapse {
   display: none;
@@ -70,12 +73,29 @@ h3 {
 .nav-menu .nav-items {
   display: flex;
 }
+.nav-menu .nav-items .nav-link {
+  padding: 1.2rem 1rem;
+}
 .nav-menu .nav-items .nav-link a {
-  padding: 1rem;
   text-transform: capitalize;
+  font-family: "Abel", sans-serif;
+}
+.nav-menu .nav-items .nav-link:hover {
+  background-color: #a1c4cf;
+}
+.nav-menu .nav-items .nav-link:hover a {
+  color: #fff;
+}
+.nav-menu .nav-brand a {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.6rem;
 }
 .nav-menu .social-icons a i {
   padding: 0.1rem 0.3rem;
+}
+
+.collapse {
+  height: 16rem;
 }
 
 /* Main Site-title */
@@ -99,17 +119,41 @@ main .site-title .btn {
 
 /* Media Query */
 @media (max-width: 576px) {
+  .nav-menu {
+    align-items: initial;
+  }
   .nav-menu .toggle-collapse {
     display: initial;
+    position: absolute;
+    right: 0.7rem;
+    top: 0.7rem;
   }
-  .nav-menu .toggle-collapse .toggle-icons {
-    margin-right: 1rem;
+  .nav-menu .toggle-collapse .toggle-icons i {
+    font-size: 1.6rem;
   }
   .nav-menu .nav-items {
     flex-direction: column;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 7vh;
+    transform: translateX(-50%);
+    z-index: -999;
+  }
+  .nav-menu .nav-items .nav-link {
+    padding: 0.5rem;
   }
   .nav-menu .social-icons {
-    margin-top: 10rem;
+    position: absolute;
+    top: 13.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -999;
+    padding-top: 0.5rem;
+  }
+  .nav-menu .nav-brand {
+    position: absolute;
+    top: 1%;
   }
 }
 

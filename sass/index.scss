@@ -2,7 +2,6 @@
     padding: 0; margin: 0; box-sizing: border-box;
 }
 
-
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
@@ -62,24 +61,46 @@ h3 {
 .nav-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 0;
+    // min-height: 8vh;
     height: 8vh;
-    
+    transition: 1s;
     .toggle-collapse {
         display: none;
     }
+    overflow-y: hidden;
     .nav-items {
         display: flex;
-        .nav-link a{
-            padding: 1rem;
-            @extend .text-gray;
-            text-transform: capitalize;
+        .nav-link {
+            padding: 1.2rem 1rem;
+            a {
+                @extend .text-gray;
+                text-transform: capitalize;
+                font-family: 'Abel', sans-serif;
+            }
+            &:hover {
+                background-color: #a1c4cf;
+                a {
+                    color: #fff;
+                }
+            }       
+        }
+    }
+    .nav-brand {
+        a {
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 1.6rem;    
         }
     }
     .social-icons a i{
         padding: .1rem .3rem;
         @extend .text-gray;
     }
+}
+
+.collapse {
+    height: 16rem;
 }
 
 /* Main Site-title */
@@ -106,17 +127,41 @@ main {
 /* Media Query */
 @media (max-width: 576px) {
     .nav-menu {
+        align-items: initial;
         .toggle-collapse {
             display: initial;
+            position: absolute;
+            right: .7rem;
+            top: .7rem;
             .toggle-icons {
-                margin-right: 1rem;
+                i {
+                    font-size: 1.6rem;
+                }
             }
         }
         .nav-items{
             flex-direction: column;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 7vh;
+            transform: translateX(-50%);
+            z-index: -999;
+            .nav-link {
+                padding: .5rem;
+            }
         }
         .social-icons {
-            margin-top: 10rem;
+            position: absolute;
+            top: 13.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -999;
+            padding-top: .5rem;
+        }
+        .nav-brand {
+            position: absolute;
+            top: 1%;
         }
     }
 }
