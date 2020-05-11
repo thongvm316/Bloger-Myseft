@@ -149,8 +149,106 @@ main .site-content .container {
 main .site-content .container .posts {
   width: 70%;
 }
+main .site-content .container .post-image {
+  position: relative;
+}
+main .site-content .container .post-image .test {
+  overflow: hidden;
+}
+main .site-content .container .post-image .test img {
+  width: 100%;
+  transition: 1s ease;
+}
+main .site-content .container .post-image .img:hover {
+  transform: scale(1.3);
+}
+main .site-content .container .post-image .post-info {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  padding: 1rem;
+  width: 25rem;
+  border-radius: 3rem;
+  text-align: center;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .site-content .container .post-image .post-info span {
+  font-family: "Abel", sans-serif;
+}
+main .site-content .container .post-image .post-info span i {
+  color: gray;
+}
+main .site-content .container .post-image .post-info .cm, main .site-content .container .post-image .post-info .fa-calendar {
+  margin-left: 1rem;
+}
+main .site-content .container .post-title {
+  padding: 1.3rem 2rem;
+  font-size: 1.5rem;
+  font-family: "Anton", sans-serif;
+}
+main .site-content .container .post-title p {
+  padding: 1rem 0;
+  font-family: "Lexend Deca", sans-serif;
+  color: #7b7b7b;
+}
+main .site-content .container .post-title .post-btn {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
 main .site-content .container .sidebar {
   width: 30%;
+}
+main .site-content .container .sidebar .common {
+  margin-left: 2.5rem;
+}
+main .site-content .container .sidebar .common h2 {
+  font-family: "Lexend Deca", sans-serif;
+}
+main .site-content .container .sidebar .common ul li {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  margin: 0.7rem 0 0.7rem 2rem;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .site-content .container .sidebar .common ul li a {
+  font-family: "Livvic", sans-serif;
+  color: black;
+}
+main .site-content .container .sidebar .popular-post {
+  margin-top: 5rem;
+}
+main .site-content .container .sidebar .popular-post .post-content {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+main .site-content .container .sidebar .popular-post .post-content .post-info {
+  padding: 0.3rem;
+  border-radius: 0;
+  background: #fff;
+  left: 38%;
+  width: 20rem;
+}
+main .site-content .container .sidebar .popular-post .post-content .post-title {
+  padding: 1rem 0;
+}
+main .site-content .container .sidebar .popular-post .post-content .post-title a {
+  font-size: 1rem;
+}
+main .site-content .container .sidebar .newsletter input {
+  display: block;
+  padding: 0.5rem;
+  width: 70%;
+  margin: 1rem 0;
+}
+main .site-content .container .sidebar .newsletter .form-btn {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  border-radius: 0;
+  width: 70%;
+  font-family: "Livvic", sans-serif;
+  font-size: 1rem;
 }
 
 /* Media Query */
