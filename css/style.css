@@ -221,15 +221,15 @@ main .site-content .container .sidebar .popular-post {
   margin-top: 5rem;
 }
 main .site-content .container .sidebar .popular-post .post-content {
-  margin-top: 1.5rem;
-  margin-bottom: 2.5rem;
+  margin: 1.5rem 0 2.5rem 2rem;
 }
 main .site-content .container .sidebar .popular-post .post-content .post-info {
   padding: 0.3rem;
   border-radius: 0;
   background: #fff;
-  left: 38%;
-  width: 20rem;
+  left: 0%;
+  transform: translateX(0);
+  width: 15rem;
 }
 main .site-content .container .sidebar .popular-post .post-content .post-title {
   padding: 1rem 0;
@@ -237,18 +237,46 @@ main .site-content .container .sidebar .popular-post .post-content .post-title {
 main .site-content .container .sidebar .popular-post .post-content .post-title a {
   font-size: 1rem;
 }
-main .site-content .container .sidebar .newsletter input {
+main .site-content .container .sidebar .newsletter {
+  margin-top: 4rem;
+}
+main .site-content .container .sidebar .newsletter .form-element {
+  margin-left: 2rem;
+}
+main .site-content .container .sidebar .newsletter .form-element input {
   display: block;
   padding: 0.5rem;
   width: 70%;
   margin: 1rem 0;
 }
-main .site-content .container .sidebar .newsletter .form-btn {
+main .site-content .container .sidebar .newsletter .form-element .form-btn {
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   border-radius: 0;
   width: 70%;
   font-family: "Livvic", sans-serif;
   font-size: 1rem;
+}
+main .site-content .container .sidebar .popular-tags {
+  margin-top: 5rem;
+}
+main .site-content .container .sidebar .popular-tags h2 {
+  text-transform: capitalize;
+}
+main .site-content .container .sidebar .popular-tags .tags {
+  margin: 0.5rem 0 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .site-content .container .sidebar .popular-tags .tags .tag {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin: 0.5rem 1rem 0 0;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* Media Query */
