@@ -292,9 +292,77 @@ main {
 }
 
 footer {
+    width: 100%;
+    height: auto;
+    background-color: black;
     .container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        > div {
+            padding: 3rem .9rem;
+        }
+    }
+    div {
+        p {
+            font-family: 'Lexend Deca', sans-serif;
+            color: #7b7b7b;
+        }
+        h2 {
+            color: #fff;
+            text-transform: capitalize;
+            font-family: 'Lexend Deca', sans-serif;
+            margin-bottom: 1rem;
+        }
+    }
+    .newsletter-ft {
+        .form-element {
+            margin-top: 1rem;
+            input {
+                padding: .5rem;
+            }
+            span {
+                background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+                padding: .55rem .7rem;
+                margin-left: -4px;
+                position: relative;
+                top: 1px;
+                i {
+                    display: inline-block;
+                    
+                }
+            }
+        }
+    }
+    .instagram {
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            img {
+                width: 25%;
+                height: 50%;
+                margin: .3rem .4rem;
+            }
+        }
+    }
+    .follow {
+        div {
+            margin-top: 1rem;
+            i {
+                color: #fff;
+                padding: 0 .3rem;
+            }
+        }
+    }
+    .rights {
+        color: #fff;
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        color: gray;
+        h4 {
+            a {
+                color: #fff;
+            }
+        }
     }
 }
 

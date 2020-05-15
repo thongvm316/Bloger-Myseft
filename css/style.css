@@ -274,9 +274,68 @@ main .site-content .container .sidebar .popular-tags .tags .tag {
   margin: 0.5rem 1rem 0 0;
 }
 
+footer {
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
 footer .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+footer .container > div {
+  padding: 3rem 0.9rem;
+}
+footer div p {
+  font-family: "Lexend Deca", sans-serif;
+  color: #7b7b7b;
+}
+footer div h2 {
+  color: #fff;
+  text-transform: capitalize;
+  font-family: "Lexend Deca", sans-serif;
+  margin-bottom: 1rem;
+}
+footer .newsletter-ft .form-element {
+  margin-top: 1rem;
+}
+footer .newsletter-ft .form-element input {
+  padding: 0.5rem;
+}
+footer .newsletter-ft .form-element span {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  padding: 0.55rem 0.7rem;
+  margin-left: -4px;
+  position: relative;
+  top: 1px;
+}
+footer .newsletter-ft .form-element span i {
+  display: inline-block;
+}
+footer .instagram div {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .instagram div img {
+  width: 25%;
+  height: 50%;
+  margin: 0.3rem 0.4rem;
+}
+footer .follow div {
+  margin-top: 1rem;
+}
+footer .follow div i {
+  color: #fff;
+  padding: 0 0.3rem;
+}
+footer .rights {
+  color: #fff;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: gray;
+}
+footer .rights h4 a {
+  color: #fff;
 }
 
 /* Media Query */
