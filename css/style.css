@@ -398,11 +398,6 @@ footer .rights h4 a {
     display: inherit;
   }
 }
-@media (min-width: 1024px) {
-  .blog-content:nth-child(1) {
-    display: none;
-  }
-}
 @media (max-width: 768px) {
   .blog-content:nth-child(1) {
     display: none;
