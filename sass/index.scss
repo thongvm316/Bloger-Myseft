@@ -62,14 +62,12 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
-    // min-height: 8vh;
-    height: 4rem;
+    width: 100%;
+    height: 4rem; // Set theo root 1rem = 16px
     transition: 1s;
     .toggle-collapse {
         display: none;
     }
-    overflow-y: hidden;
     .nav-items {
         display: flex;
         .nav-link {
@@ -109,10 +107,8 @@ main {
     .site-title {
         background: url('../img/Background-image.png') no-repeat center;
         background-size: cover;
-        width: 100vw;
+        width: 100vw; // 1 vw = 1% chiều ngang của trình duyệt.
         height: 115vh;
-        display: flex;
-        justify-content: center;
         text-align: center;
         color: #fff;
         .site-background {
@@ -127,7 +123,7 @@ main {
     /* Blog */    
     .blog {
         background: url('../img/Abract01.png') no-repeat right;
-        background-size: 50%;
+        background-size: 4  5%;
         width: 100vw;
         height: auto;
         .blog-post {
@@ -369,10 +365,9 @@ footer {
 /* Media Query */
 @media (max-width: 576px) {
     .nav-menu {
-        align-items: initial;
         .toggle-collapse {
-            display: initial;
-            position: absolute;
+            display: block;
+            position: absolute; // Cha ko co Relative -> Can theo trinh duyet
             right: .7rem;
             top: 1.3rem;
             .toggle-icons {
@@ -388,7 +383,7 @@ footer {
             left: 50%;
             top: 4rem;
             transform: translateX(-50%);
-            z-index: -999;
+            z-index: -999; // Do su dung position: absolute o tren nen element nav se la layer nam tren, su dung z-index de layer nay nam duoi layer main
             .nav-link {
                 padding: .5rem;
             }

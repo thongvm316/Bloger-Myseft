@@ -62,10 +62,9 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  width: 100%;
   height: 4rem;
   transition: 1s;
-  overflow-y: hidden;
 }
 .nav-menu .toggle-collapse {
   display: none;
@@ -108,8 +107,6 @@ main .site-title {
   background-size: cover;
   width: 100vw;
   height: 115vh;
-  display: flex;
-  justify-content: center;
   text-align: center;
   color: #fff;
 }
@@ -122,7 +119,7 @@ main .site-title .btn {
 }
 main .blog {
   background: url("../img/Abract01.png") no-repeat right;
-  background-size: 50%;
+  background-size: 4 5%;
   width: 100vw;
   height: auto;
 }
@@ -340,11 +337,8 @@ footer .rights h4 a {
 
 /* Media Query */
 @media (max-width: 576px) {
-  .nav-menu {
-    align-items: initial;
-  }
   .nav-menu .toggle-collapse {
-    display: initial;
+    display: block;
     position: absolute;
     right: 0.7rem;
     top: 1.3rem;
