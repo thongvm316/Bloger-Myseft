@@ -119,7 +119,7 @@ main .site-title .btn {
 }
 main .blog {
   background: url("../img/Abract01.png") no-repeat right;
-  background-size: 4 5%;
+  background-size: 45%;
   width: 100vw;
   height: auto;
 }
@@ -224,9 +224,10 @@ main .site-content .container .sidebar .popular-post .post-content .post-info {
   padding: 0.3rem;
   border-radius: 0;
   background: #fff;
+  position: absolute;
   left: 0%;
   transform: translateX(0);
-  width: 15rem;
+  width: 50%;
 }
 main .site-content .container .sidebar .popular-post .post-content .post-title {
   padding: 1rem 0;
@@ -305,9 +306,6 @@ footer .newsletter-ft .form-element span {
   margin-left: -4px;
   position: relative;
   top: 1px;
-}
-footer .newsletter-ft .form-element span i {
-  display: inline-block;
 }
 footer .instagram div {
   display: flex;
